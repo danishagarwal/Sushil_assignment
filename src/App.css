@@ -1,38 +1,69 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+.search-bar {
+  margin-bottom: 20px; 
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.pagination {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #3498db;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination button:hover {
+  background-color: #2980b9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination button:active {
+  background-color: #1f4e80;
 }
+
+
+
+
+
+
+
